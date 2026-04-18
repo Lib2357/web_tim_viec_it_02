@@ -1,0 +1,191 @@
+{
+  "contracts": {
+    "statCards": [
+      { "title": "Tong hop dong", "value": "4", "trend": "+12% tu thang truoc", "icon": "description", "tone": "bg-blue-100 text-blue-600" },
+      { "title": "Dang thuc hien", "value": "2", "trend": "+8% tu tuan truoc", "icon": "trending_up", "tone": "bg-blue-100 text-blue-600" },
+      { "title": "Hoan thanh", "value": "2", "trend": "+15% tu thang truoc", "icon": "check_circle", "tone": "bg-emerald-100 text-emerald-600" },
+      { "title": "Tong gia tri", "value": "120.000.000 d", "trend": "+22% tu quy truoc", "icon": "payments", "tone": "bg-purple-100 text-purple-600" }
+    ]
+  },
+  "jobProgress": {
+    "statusOptions": ["Tat ca", "Dang thuc hien", "Xem xet", "Hoan thanh", "Qua han"],
+    "timeline": [
+      { "title": "Checkout module dat 72%", "time": "2 gio truoc", "tone": "text-blue-600" },
+      { "title": "Khach hang Nexteam phan hoi vong review #2", "time": "Hom qua", "tone": "text-amber-600" },
+      { "title": "Ban giao App Booking thanh cong", "time": "6 ngay truoc", "tone": "text-emerald-600" }
+    ],
+    "jobs": [
+      { "id": "JOB-2401", "project": "Website E-commerce", "client": "Mekong Retail", "task": "Hoan thien module checkout va tich hop VNPay", "status": "Dang thuc hien", "progress": 72, "deadline": "2026-04-20", "updatedAt": "2026-04-15 10:30" },
+      { "id": "JOB-2402", "project": "CRM Dashboard", "client": "Nexteam", "task": "Thiet ke analytics chart va export report", "status": "Xem xet", "progress": 40, "deadline": "2026-04-22", "updatedAt": "2026-04-14 16:20" }
+    ]
+  },
+  "milestones": {
+    "projectOptions": ["Chon du an...", "Website E-commerce", "Mobile Banking App", "Dashboard CRM"],
+    "statCards": [
+      { "title": "Tong milestone", "value": "8" },
+      { "title": "Da hoan thanh", "value": "5" },
+      { "title": "Dang thuc hien", "value": "2" },
+      { "title": "Qua han", "value": "1" }
+    ],
+    "items": [
+      { "id": "m1", "project": "Website E-commerce", "title": "Checkout + VNPay", "status": "Dang thuc hien", "progress": 72, "due": "2026-04-20" },
+      { "id": "m2", "project": "Dashboard CRM", "title": "Export report", "status": "Xem xet", "progress": 40, "due": "2026-04-22" }
+    ]
+  },
+  "jobDirectory": {
+    "statusOptions": ["Chon trang thai", "Dang mo", "Tam dung", "Da dong"],
+    "statCards": [
+      { "title": "Tong job", "value": "12" },
+      { "title": "Dang mo", "value": "8" },
+      { "title": "Tam dung", "value": "2" },
+      { "title": "Da dong", "value": "2" }
+    ],
+    "jobs": [
+      { "id": "j1", "title": "Frontend Developer", "company": "Mekong Retail", "status": "Dang mo", "location": "HCM", "salary": "18M - 30M" },
+      { "id": "j2", "title": "Backend Developer", "company": "Nexteam", "status": "Tam dung", "location": "Ha Noi", "salary": "25M - 40M" }
+    ]
+  },
+  "employerOverview": {
+    "overviewCards": [
+      { "key": "jobs", "label": "Tong job", "value": "12", "icon": "work" },
+      { "key": "applications", "label": "Tong ho so", "value": "248", "icon": "group" },
+      { "key": "interviews", "label": "Phong van tuan nay", "value": "9", "icon": "calendar_month" }
+    ],
+    "quickActions": [
+      { "label": "Dang job", "to": "/employer-post-job" },
+      { "label": "Ho so da nhan", "to": "/employer-received-cv" },
+      { "label": "Lich phong van", "to": "/employer-interviews" }
+    ],
+    "recentActivities": [
+      { "title": "Nhan 12 ho so moi cho Frontend Developer", "time": "2 gio truoc" },
+      { "title": "Da len lich phong van cho 3 ung vien", "time": "Hom nay" }
+    ]
+  },
+  "employerNotifications": {
+    "tabs": ["Tat ca", "Chua doc", "Ung vien", "He thong"],
+    "items": [
+      { "id": "en1", "type": "Ung vien", "title": "Ung vien moi nop ho so vao job Frontend Developer", "time": "20 phut truoc", "read": false },
+      { "id": "en2", "type": "He thong", "title": "Goi dang tin se het han sau 3 ngay", "time": "2 gio truoc", "read": true }
+    ]
+  },
+  "employerMessages": {
+    "quickReplies": ["Yeu cau portfolio", "Hen lich phong van", "Cam on"],
+    "conversations": [
+      {
+        "id": "c1",
+        "name": "Nguyen Minh Anh",
+        "role": "Frontend Developer",
+        "lastMessage": "Em gui them portfolio de review.",
+        "messages": [
+          { "from": "candidate", "text": "Em gui them portfolio de review.", "time": "09:20" },
+          { "from": "employer", "text": "Da nhan duoc. Ben anh chi se phan hoi som.", "time": "09:35" }
+        ]
+      }
+    ]
+  },
+  "employerInterview": {
+    "viewModes": ["Thang", "Tuan", "Ngay"],
+    "statusOptions": ["Tat ca trang thai", "Quan trong", "Uu tien", "Onsite", "Theo doi"],
+    "roleOptions": ["Moi vi tri", "UI/UX Designer", "Backend Developer", "Frontend Engineer", "Product Designer"],
+    "items": [
+      { "id": "i1", "candidate": "Nguyen Minh Anh", "role": "Frontend Engineer", "date": "2026-04-22", "time": "10:00", "type": "Onsite" },
+      { "id": "i2", "candidate": "Tran Bao Chau", "role": "Product Designer", "date": "2026-04-23", "time": "14:00", "type": "Theo doi" }
+    ]
+  },
+  "employerReceivedProfiles": {
+    "applicationStatusOptions": ["Moi nhan", "Phu hop", "Hen phong van", "Duyet", "Tu choi"],
+    "candidates": [
+      { "id": "app-1001", "name": "Nguyen Minh Anh", "email": "minhanh.dev@example.com", "role": "Frontend Engineer", "experience": "3 nam", "submittedAt": "2026-04-16", "status": "Moi nhan" },
+      { "id": "app-1002", "name": "Tran Bao Chau", "email": "baochau.pm@example.com", "role": "Product Designer", "experience": "4 nam", "submittedAt": "2026-04-15", "status": "Phu hop" }
+    ]
+  },
+  "authPortal": {
+    "trustStats": [
+      { "value": "32k+", "label": "Ung vien cong nghe" },
+      { "value": "1.2k+", "label": "Job moi moi tuan" }
+    ],
+    "modes": {
+      "login": { "label": "Dang nhap", "heading": "Trang dang nhap", "description": "Dang nhap de quan ly viec da ung tuyen.", "submit": "Dang nhap", "helper": "Chua co tai khoan?", "helperCta": "Dang ky ngay", "helperTo": "/register", "secondary": "Quen mat khau?", "secondaryCta": "Khoi phuc tai khoan", "secondaryTo": "/forgot-password" },
+      "register": { "label": "Dang ky", "heading": "Trang dang ky tai khoan", "description": "Tao tai khoan de xay dung profile chuyen nghiep.", "submit": "Tao tai khoan", "helper": "Da co tai khoan?", "helperCta": "Dang nhap", "helperTo": "/login", "secondary": "Can khoi phuc email?", "secondaryCta": "Quen mat khau", "secondaryTo": "/forgot-password" },
+      "forgot": { "label": "Reset", "heading": "Khoi phuc mat khau", "description": "Nhap email de nhan lien ket dat lai mat khau.", "submit": "Gui lien ket", "helper": "Da nho mat khau?", "helperCta": "Quay lai dang nhap", "helperTo": "/login", "secondary": "Chua co tai khoan?", "secondaryCta": "Tao tai khoan", "secondaryTo": "/register" }
+    }
+  },
+  "employerMilestones": {
+    "seedMilestones": [
+      { "id": 1, "name": "Thiet ke UI Homepage", "candidate": "Alex Nguyen", "role": "Senior UI/UX Designer", "progress": 100, "status": "Hoan thanh", "budget": "8.500.000 d", "deadline": "28/04/2026", "note": "Da ban giao file Figma." },
+      { "id": 2, "name": "Xay dung API xac thuc", "candidate": "Le Nam Hoa", "role": "Backend Developer", "progress": 65, "status": "Dang lam", "budget": "12.000.000 d", "deadline": "02/05/2026", "note": "Dang hoan tat refresh token flow." }
+    ]
+  },
+  "employerRecruitment": {
+    "steps": [
+      { "id": 1, "label": "Thong tin chung" },
+      { "id": 2, "label": "Yeu cau va quyen loi" },
+      { "id": 3, "label": "Xem truoc va dang" }
+    ],
+    "options": {
+      "departments": ["Phong Ky thuat", "Phong San pham", "Phong QA"],
+      "levels": ["Intern", "Junior", "Middle", "Senior", "Lead"],
+      "experienceOptions": ["Chua yeu cau", "1-2 nam", "2-4 nam", "3-5 nam", "5+ nam"],
+      "workModes": ["Van phong", "Hybrid", "Remote"],
+      "packageOptions": ["Goi thuong", "Goi noi bat"]
+    },
+    "initialForm": {
+      "title": "",
+      "department": "Phong Ky thuat",
+      "level": "Senior",
+      "openings": "1",
+      "location": "TP. Ho Chi Minh",
+      "salaryMin": "2000",
+      "salaryMax": "3500",
+      "negotiable": false,
+      "description": "Mo ta vai tro va muc tieu cong viec.",
+      "requirements": "Neu ro yeu cau ky thuat va kinh nghiem.",
+      "skills": ["ReactJS", "NodeJS", "UI/UX"],
+      "experience": "3-5 nam",
+      "workMode": "Van phong",
+      "benefits": "Luong thang 13, BHXH day du.",
+      "deadline": "2026-05-31",
+      "packageType": "Goi thuong"
+    }
+  },
+  "ungTuyen": {
+    "dashboard": {
+      "overviewCards": [
+        { "key": "active", "badge": "Dang lam", "value": "3", "label": "Du an dang thuc hien", "icon": "work", "shell": "from-[#3b82f6] to-[#4f46e5]" },
+        { "key": "done", "badge": "Hoan thanh", "value": "15", "label": "Du an da hoan thanh", "icon": "check_circle", "shell": "from-[#22c55e] to-[#0ea56b]" }
+      ],
+      "quickActions": [
+        { "label": "Tim viec", "icon": "search", "tone": "bg-blue-500 hover:bg-blue-600" },
+        { "label": "Ho so", "icon": "person", "tone": "bg-lime-500 hover:bg-lime-600" }
+      ],
+      "activities": [
+        { "title": "Hoan thanh du an E-commerce Website", "time": "2h truoc", "tone": "text-emerald-600" }
+      ]
+    },
+    "jobDirectory": {
+      "statusOptions": ["Chon trang thai", "Dang mo", "Tam dung", "Da dong"],
+      "statCards": [
+        { "key": "total", "title": "Tong don ung tuyen", "icon": "description", "tone": "bg-blue-100 text-blue-600", "suffix": "" }
+      ]
+    },
+    "jobList": {
+      "statusOptions": ["Chon trang thai", "Cho duyet", "Dang xem xet", "Chap nhan", "Tu choi"],
+      "statCards": [
+        { "key": "total", "title": "Tong don ung tuyen", "icon": "description", "tone": "bg-blue-100 text-blue-600" }
+      ],
+      "appliedJobs": []
+    },
+    "contracts": {
+      "statCards": [
+        { "title": "Tong hop dong", "value": "0", "trend": "+0%", "icon": "description", "tone": "bg-blue-100 text-blue-600" }
+      ]
+    },
+    "milestones": {
+      "projectOptions": ["Chon du an...", "Website E-commerce", "Mobile Banking App"],
+      "statCards": [
+        { "key": "total", "title": "Tong Milestone", "icon": "target", "tone": "bg-blue-50 text-blue-600" }
+      ],
+      "items": []
+    }
+  }
+}

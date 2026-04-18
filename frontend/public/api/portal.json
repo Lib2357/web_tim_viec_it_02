@@ -1,0 +1,132 @@
+{
+  "dashboard": {
+    "overviewCards": [
+      {
+        "key": "active",
+        "badge": "Dang lam",
+        "value": "3",
+        "label": "Du an dang thuc hien",
+        "icon": "work",
+        "shell": "from-[#3b82f6] to-[#4f46e5]"
+      },
+      {
+        "key": "done",
+        "badge": "Hoan thanh",
+        "value": "15",
+        "label": "Du an da hoan thanh",
+        "icon": "check_circle",
+        "shell": "from-[#22c55e] to-[#0ea56b]"
+      },
+      {
+        "key": "income",
+        "badge": "Thu nhap",
+        "value": "45.000.000 VND",
+        "label": "Tong thu nhap",
+        "icon": "payments",
+        "shell": "from-[#f59e0b] to-[#f97316]"
+      }
+    ],
+    "quickActions": [
+      { "label": "Tim viec", "icon": "search", "tone": "bg-blue-500 hover:bg-blue-600" },
+      { "label": "Ho so", "icon": "person", "tone": "bg-lime-500 hover:bg-lime-600" },
+      { "label": "Vi", "icon": "account_balance_wallet", "tone": "bg-amber-500 hover:bg-amber-600" },
+      { "label": "Tin nhan", "icon": "chat_bubble_outline", "tone": "bg-slate-500 hover:bg-slate-600" }
+    ],
+    "activities": [
+      { "title": "Hoan thanh du an E-commerce Website", "time": "2h truoc", "tone": "text-emerald-600" },
+      { "title": "Nhan hop dong moi tu khach hang TechGlobal", "time": "5h truoc", "tone": "text-blue-600" },
+      { "title": "Cap nhat ho so ky nang thanh cong", "time": "Hom qua", "tone": "text-violet-600" }
+    ]
+  },
+  "discussions": {
+    "filterOptions": ["Tat ca", "Tuyen dung", "Career", "ReactJS", "Node.js", "Phong van"],
+    "forumPosts": [
+      {
+        "id": "post-1",
+        "author": "Pham Minh An",
+        "role": "Frontend Developer - 3 nam",
+        "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=80&h=80&fit=crop",
+        "content": "Minh dang can nhac giua 2 offer React: mot ben startup, mot ben agency. Muc tieu len Senior trong 1-2 nam thi nen chon huong nao?",
+        "tags": ["Career", "ReactJS"],
+        "time": "20 phut truoc",
+        "likes": 42,
+        "comments": 18,
+        "shares": 3
+      },
+      {
+        "id": "post-2",
+        "author": "Le Thanh Huong",
+        "role": "Backend Engineer",
+        "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop",
+        "content": "Team minh dang tuyen Node.js (mid/senior), remote 3 ngay/tuan. Ban nao quan tam minh gui JD chi tiet.",
+        "tags": ["Tuyen dung", "Node.js"],
+        "time": "1 gio truoc",
+        "likes": 31,
+        "comments": 12,
+        "shares": 5
+      }
+    ]
+  },
+  "messages": {
+    "threads": [
+      {
+        "id": "t1",
+        "name": "Mekong Retail",
+        "role": "Website E-commerce",
+        "unread": 2,
+        "lastTime": "10:24",
+        "lastMessage": "Ban co the gui ban demo checkout trong hom nay khong?",
+        "type": "application"
+      },
+      {
+        "id": "t2",
+        "name": "Nexteam",
+        "role": "CRM Dashboard",
+        "unread": 1,
+        "lastTime": "Hom qua",
+        "lastMessage": "Team da review, can update them 2 bieu do.",
+        "type": "application"
+      },
+      {
+        "id": "t3",
+        "name": "He thong ChoCode",
+        "role": "Thong bao he thong",
+        "unread": 0,
+        "lastTime": "2 ngay",
+        "lastMessage": "Tai khoan cua ban vua duoc nang hang uy tin.",
+        "type": "system"
+      }
+    ],
+    "messagesByThread": {
+      "t1": [
+        { "from": "client", "text": "Chao ban, tien do checkout den dau roi?", "time": "09:58" },
+        { "from": "me", "text": "Minh da xong 72%, dang test callback thanh toan.", "time": "10:05" },
+        { "from": "client", "text": "Ban co the gui ban demo checkout trong hom nay khong?", "time": "10:24" }
+      ],
+      "t2": [
+        { "from": "client", "text": "Dashboard da on, nhung can them report theo tuan.", "time": "Hom qua" },
+        { "from": "me", "text": "Da ro, minh se cap nhat trong chieu nay.", "time": "Hom qua" }
+      ],
+      "t3": [{ "from": "client", "text": "Tai khoan cua ban vua duoc nang hang uy tin.", "time": "2 ngay" }]
+    },
+    "websiteNotifications": [
+      { "title": "Co job moi phu hop ky nang React", "time": "30 phut truoc", "tone": "text-blue-600" },
+      { "title": "Milestone #2 sap den han trong 2 ngay", "time": "3 gio truoc", "tone": "text-amber-600" },
+      { "title": "Hop dong JOB-2403 da duoc khach xac nhan", "time": "Hom qua", "tone": "text-emerald-600" }
+    ]
+  },
+  "notifications": {
+    "tabs": [
+      { "key": "all", "label": "Tat ca", "icon": "notifications_none", "count": 4, "tone": "bg-slate-400" },
+      { "key": "unread", "label": "Chua doc", "icon": "notifications_active", "count": 2, "tone": "bg-blue-500" },
+      { "key": "work", "label": "Cong viec", "icon": "work_outline", "count": 1, "tone": "bg-lime-500" },
+      { "key": "milestone", "label": "Milestone", "icon": "bolt", "count": 1, "tone": "bg-rose-500" },
+      { "key": "system", "label": "He thong", "icon": "settings", "count": 0, "tone": "bg-amber-500" }
+    ],
+    "items": [
+      { "id": "n1", "tab": "work", "title": "Ban co loi moi tu du an Website E-commerce", "time": "15 phut truoc", "read": false },
+      { "id": "n2", "tab": "milestone", "title": "Milestone #2 se den han trong 2 ngay", "time": "3 gio truoc", "read": false },
+      { "id": "n3", "tab": "system", "title": "Tai khoan cua ban da duoc nang cap", "time": "Hom qua", "read": true }
+    ]
+  }
+}

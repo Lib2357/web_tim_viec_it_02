@@ -47,6 +47,11 @@ async function loadMockHome() {
   return res.json()
 }
 
+async function loadMockUserCvs() {
+  const res = await fetch('/api/user-cvs.json')
+  return res.json()
+}
+
 function formatSalary(salary) {
   if (!salary || typeof salary !== 'object') return 'Thoa thuan'
   if (salary.is_negotiable && salary.min == null && salary.max == null) return 'Thoa thuan'
@@ -181,6 +186,8 @@ function normalizePublicJob(job) {
     status: applicationStatus ? mapApplicationStatus(applicationStatus) : mapJobLifecycleStatus(job.status),
     postedAt: formatRelativeTime(job.published_at),
     publishedAt: job.published_at,
+    appliedAt: job.my_application?.applied_at || job.applied_at || '',
+    updatedAt: job.my_application?.updated_at || job.updated_at || '',
     skills: Array.isArray(job.skills) ? job.skills : [],
     requirements: requirements[0] || 'Dang cap nhat yeu cau',
     deadline: formatDate(job.expired_at),
@@ -234,6 +241,7 @@ function normalizeJobDetail(job, company, myApplication) {
       verified: company?.verified || false,
     },
     companyInfo: company || {},
+    myApplication: myApplication || null,
   }
 }
 
@@ -283,6 +291,16 @@ export async function loadJobDetail(id) {
   } catch {}
 
   const mock = await loadMockJobs()
+  const appliedItems = Array.isArray(mock?.appliedJobsResponse?.data?.jobs) ? mock.appliedJobsResponse.data.jobs : []
+  const appliedMatch = appliedItems.find((item) => {
+    const jobId = item?.job?._id || item?.job?.id
+    return String(jobId) === String(id)
+  })
+
+  if (appliedMatch?.job) {
+    return normalizeJobDetail(appliedMatch.job, appliedMatch.job.company, appliedMatch.my_application || null)
+  }
+
   const details = mock.jobDetails || []
   return details.find((item) => item.id === id) || details[0] || null
 }
@@ -317,6 +335,24 @@ export async function loadAppliedJobs() {
   } catch {}
 
   const mock = await loadMockJobs()
+  const fallbackItems = Array.isArray(mock?.appliedJobsResponse?.data?.jobs)
+    ? mock.appliedJobsResponse.data.jobs
+    : Array.isArray(mock?.appliedJobs)
+      ? mock.appliedJobs
+      : []
+
+  if (fallbackItems.length) {
+    return fallbackItems.map((item) => {
+      const baseJob = item.job || item
+      const merged = {
+        ...baseJob,
+        my_application: item.my_application || item.application || item.my_application,
+        application_status: item.status || item.application_status || item.my_application?.status,
+      }
+      return normalizePublicJob(merged)
+    })
+  }
+
   return mock.jobs || []
 }
 
@@ -385,4 +421,9 @@ export async function toggleFavoriteJob(jobId, shouldFavorite) {
   } catch {
     return false
   }
+}
+
+export async function loadUserUploadedCvs() {
+  const mock = await loadMockUserCvs()
+  return Array.isArray(mock?.data?.cvs) ? mock.data.cvs : []
 }

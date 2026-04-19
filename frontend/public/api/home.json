@@ -92,25 +92,25 @@
     }
   ],
   "footer": {
-    "brandDescription": "Nen tang ket noi hang dau giua khach hang va lap trinh vien tai Viet Nam.",
+    "brandDescription": "Nền tảng kết nối hàng đầu giữa khách hàng và lập trình viên tại Việt Nam.",
     "columns": [
       {
-        "title": "Nen tang",
-        "links": ["Gioi thieu", "Quy trinh", "Phi dich vu", "Blog cong nghe"]
+        "title": "Nền tảng",
+        "links": ["Giới thiệu", "Quy trình", "Phí dịch vụ", "Blog công nghệ"]
       },
       {
-        "title": "Freelancer",
-        "links": ["Viec lam React", "Viec lam Python", "Viec lam Mobile", "Goi Member"]
+        "title": "Lập trình viên",
+        "links": ["Việc làm React", "Việc làm Python", "Việc làm Mobile", "Gói thành viên"]
       },
       {
-        "title": "Khach hang",
-        "links": ["Thue React Dev", "Thue Designer", "Dang du an", "Ho tro 24/7"]
+        "title": "Khách hàng",
+        "links": ["Thuê React Dev", "Thuê Designer", "Đăng dự án", "Hỗ trợ 24/7"]
       },
       {
-        "title": "Phap ly",
-        "links": ["Dieu khoan", "Bao mat", "Cookie"]
+        "title": "Pháp lý",
+        "links": ["Điều khoản", "Bảo mật", "Cookie"]
       }
     ],
-    "copyright": "© 2026 CHOCODE. Crafted for Vietnamese Developers."
+    "copyright": "© 2026 CHOCODE. Dành cho cộng đồng lập trình viên Việt Nam."
   }
 }

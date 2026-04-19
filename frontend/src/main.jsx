@@ -11,10 +11,13 @@ import MilestoneManagement from './pages/MilestoneManagement.jsx'
 import Notifications from './pages/Notifications.jsx'
 import JobProgress from './pages/JobProgress.jsx'
 import MessagesCenter from './pages/MessagesCenter.jsx'
+import UploadedCvs from './pages/UploadedCvs.jsx'
 import AuthPortal from './pages/AuthPortal.jsx'
 import JobDetail from './pages/JobDetail.jsx'
 import Discussions from './pages/Discussions.jsx'
 import Favorites from './pages/Favorites.jsx'
+import SearchJobs from './pages/SearchJobs.jsx'
+import AIAgent from './pages/AIAgent.jsx'
 import EmployerOverviewDashboard from './pages/tuyen-dung/EmployerOverviewDashboard.jsx'
 import EmployerRecruitmentDashboard from './pages/tuyen-dung/EmployerRecruitmentDashboard.jsx'
 import EmployerJobList from './pages/tuyen-dung/EmployerJobList.jsx'
@@ -51,14 +54,18 @@ createRoot(document.getElementById('root')).render(
         <Route path="/milestones" element={<MilestoneManagement />} />
         <Route path="/notifications" element={<Notifications />} />
         <Route path="/job-progress" element={<JobProgress />} />
+        <Route path="/uploaded-cvs" element={<UploadedCvs />} />
         <Route path="/messages" element={<MessagesCenter />} />
         <Route path="/login" element={<AuthPortal mode="login" />} />
         <Route path="/register" element={<AuthPortal mode="register" />} />
         <Route path="/forgot-password" element={<AuthPortal mode="forgot" />} />
+        <Route path="/reset-password" element={<AuthPortal mode="reset" />} />
         <Route path="/job-detail" element={<JobDetail />} />
         <Route path="/job-detail/:id" element={<JobDetail />} />
         <Route path="/discussions" element={<Discussions />} />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="/search-jobs" element={<SearchJobs />} />
+        <Route path="/ai-agent" element={<AIAgent />} />
         <Route path="/admin/login" element={<AdminLogin />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
         <Route path="/admin/users" element={<AdminUsers />} />

@@ -12,6 +12,7 @@ const candidateSections = [
     title: 'Quan ly Job',
     items: [
       { key: 'job-list', icon: 'work', label: 'Danh sach Job', to: '/job-list' },
+      { key: 'uploaded-cvs', icon: 'description', label: 'CV da tai len', to: '/uploaded-cvs' },
       { key: 'job-progress', icon: 'bar_chart', label: 'Tien do cong viec', to: '/job-progress' },
       { key: 'applied-jobs', icon: 'assignment_turned_in', label: 'Viec da ung tuyen', to: '/jobs' },
       { key: 'contracts', icon: 'description', label: 'Hop dong', to: '/contracts' },

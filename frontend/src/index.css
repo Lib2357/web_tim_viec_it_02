@@ -94,6 +94,46 @@ body {
   animation: fadeUp 420ms ease both;
 }
 
+.search-page-enter {
+  animation: fadeUp 420ms ease both;
+}
+
+.search-hero-enter {
+  animation: fadeUp 520ms ease both;
+}
+
+.search-chip-enter {
+  animation: fadeUp 420ms ease both;
+}
+
+.search-card-enter {
+  animation: fadeUp 420ms ease both;
+  transition:
+    transform 180ms ease,
+    box-shadow 220ms ease,
+    border-color 180ms ease;
+}
+
+.search-card-enter:hover {
+  transform: translateY(-2px);
+  border-color: rgba(59, 130, 246, 0.45);
+  box-shadow:
+    0 12px 30px -20px rgba(37, 99, 235, 0.38),
+    0 8px 18px -14px rgba(15, 23, 42, 0.4);
+}
+
+.search-cta {
+  transition:
+    transform 170ms ease,
+    box-shadow 220ms ease,
+    background-color 180ms ease;
+}
+
+.search-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px -16px rgba(37, 99, 235, 0.7);
+}
+
 .soft-hover {
   transition:
     transform 180ms ease,

@@ -136,5 +136,139 @@
         "Môi trường kỹ thuật mạnh, nhiều bài toán quy mô lớn."
       ]
     }
-  ]
+  ],
+  "appliedJobsResponse": {
+    "status": "success",
+    "message": "Mock data for GET /jobs/me/applied",
+    "data": {
+      "jobs": [
+        {
+          "_id": "application-mobile-react-native",
+          "status": "reviewing",
+          "job": {
+            "_id": "665100000000000000000001",
+            "title": "Senior Mobile Developer (React Native)",
+            "description": "- Phat trien ung dung mobile React Native cho san pham tai chinh.\n- Phoi hop product, design va backend de ship tinh nang nhanh va on dinh.",
+            "requirements": "- Kinh nghiem React Native, TypeScript va toi uu hieu nang.\n- Hieu REST API, authentication flow, push notification.",
+            "benefits": "- Luong thang 13 va review 2 lan moi nam.\n- Hybrid linh hoat va duoc cap MacBook.",
+            "salary": {
+              "min": 35000000,
+              "max": 50000000,
+              "currency": "VND",
+              "is_negotiable": false
+            },
+            "location": "Quan 1, TP.HCM / Hybrid",
+            "job_type": "remote",
+            "level": "senior",
+            "category": ["Mobile", "Fintech"],
+            "skills": ["React Native", "TypeScript", "REST API"],
+            "quantity": 2,
+            "status": "open",
+            "moderation_status": "active",
+            "published_at": "2026-04-17T09:00:00.000Z",
+            "expired_at": "2026-05-15T17:00:00.000Z",
+            "company": {
+              "company_name": "Sky Tech Solutions",
+              "logo": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=96&h=96&fit=crop",
+              "website": "https://skytech.example.com",
+              "address": "Quan 1, TP.HCM",
+              "description": "Cong ty product xay dung ung dung tai chinh cho nguoi dung Viet Nam.",
+              "verified": true,
+              "company_size": "120+"
+            }
+          },
+          "my_application": {
+            "_id": "665100000000000000000101",
+            "status": "reviewing",
+            "applied_at": "2026-04-18T03:00:00.000Z",
+            "updated_at": "2026-04-19T02:00:00.000Z"
+          }
+        },
+        {
+          "_id": "application-frontend-react",
+          "status": "submitted",
+          "job": {
+            "_id": "665100000000000000000002",
+            "title": "Frontend Developer (ReactJS)",
+            "description": "- Xay dung dashboard va giao dien tim viec bang React.\n- Toi uu trai nghiem nguoi dung tren desktop va mobile.",
+            "requirements": "- Thanh thao React, Vite va Tailwind CSS.\n- Co kha nang lam viec voi component architecture va UI state.",
+            "benefits": "- Remote linh hoat.\n- Lo trinh phat trien len Senior Frontend.",
+            "salary": {
+              "min": 18000000,
+              "max": 30000000,
+              "currency": "VND",
+              "is_negotiable": false
+            },
+            "location": "TP.HCM / Remote linh hoat",
+            "job_type": "full-time",
+            "level": "middle",
+            "category": ["Frontend"],
+            "skills": ["React", "Vite", "Tailwind CSS"],
+            "quantity": 3,
+            "status": "open",
+            "moderation_status": "active",
+            "published_at": "2026-04-18T09:00:00.000Z",
+            "expired_at": "2026-05-20T17:00:00.000Z",
+            "company": {
+              "company_name": "Chocode Tech Editorial",
+              "logo": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=96&h=96&fit=crop",
+              "website": "https://editorial.example.com",
+              "address": "TP.HCM",
+              "description": "Doi ngu xay dung nen tang noi dung va dashboard cho cong dong IT.",
+              "verified": true,
+              "company_size": "40+"
+            }
+          },
+          "my_application": {
+            "_id": "665100000000000000000102",
+            "status": "submitted",
+            "applied_at": "2026-04-18T10:00:00.000Z",
+            "updated_at": "2026-04-18T10:00:00.000Z"
+          }
+        },
+        {
+          "_id": "application-backend-nodejs",
+          "status": "hired",
+          "job": {
+            "_id": "665100000000000000000003",
+            "title": "Backend Developer (Node.js)",
+            "description": "- Thiet ke service backend phuc vu he thong tai chinh.\n- Toi uu truy van database va theo doi monitoring production.",
+            "requirements": "- Kinh nghiem Node.js production tu 3 nam.\n- Hieu SQL, Redis va he thong phan tan.",
+            "benefits": "- Thuong hieu suat theo quy.\n- Moi truong ky thuat manh, nhieu bai toan quy mo lon.",
+            "salary": {
+              "min": 25000000,
+              "max": 40000000,
+              "currency": "VND",
+              "is_negotiable": false
+            },
+            "location": "Ha Noi / Hybrid",
+            "job_type": "full-time",
+            "level": "senior",
+            "category": ["Backend", "Fintech"],
+            "skills": ["Node.js", "PostgreSQL", "Redis"],
+            "quantity": 2,
+            "status": "open",
+            "moderation_status": "active",
+            "published_at": "2026-04-16T09:00:00.000Z",
+            "expired_at": "2026-05-28T17:00:00.000Z",
+            "company": {
+              "company_name": "Mekong Fintech",
+              "logo": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=96&h=96&fit=crop",
+              "website": "https://mekongfintech.example.com",
+              "address": "Ha Noi",
+              "description": "Cong ty fintech xay dung he thong thanh toan va danh gia rui ro.",
+              "verified": true,
+              "company_size": "200+"
+            }
+          },
+          "my_application": {
+            "_id": "665100000000000000000103",
+            "status": "hired",
+            "applied_at": "2026-04-15T07:30:00.000Z",
+            "updated_at": "2026-04-19T04:30:00.000Z"
+          }
+        }
+      ]
+    }
+  }
 }

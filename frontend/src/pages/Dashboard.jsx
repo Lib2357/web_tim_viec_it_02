@@ -68,32 +68,13 @@ export default function Dashboard() {
 
         <section className="mb-4 rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
           <h2 className="mb-4 text-[18px] font-semibold text-slate-900">Thao tac nhanh</h2>
-          <div className="grid grid-cols-2 gap-3 md:grid-cols-5">
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
             {quickActions.map((item, index) => (
               <button key={item.label} className={`rounded-md px-3 py-2.5 text-[15px] font-semibold text-white transition ${actionTones[index % actionTones.length]}`}>
                 <span className="material-symbols-outlined mr-1 !text-[18px]">{item.icon}</span>
                 {item.label}
               </button>
             ))}
-            <Link to="/admin/login" className="rounded-md bg-slate-900 px-3 py-2.5 text-center text-[15px] font-semibold text-white transition hover:bg-slate-700">
-              <span className="material-symbols-outlined mr-1 !text-[18px]">shield</span>
-              Admin
-            </Link>
-          </div>
-        </section>
-
-        <section className="mb-4 rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
-          <h2 className="mb-4 text-[18px] font-semibold text-slate-900">Chuyen khu vuc</h2>
-          <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
-            <Link to="/dashboard" className="rounded-lg border border-blue-200 bg-blue-50 px-4 py-3 text-sm font-bold text-blue-700 transition hover:bg-blue-100">
-              Nguoi dung
-            </Link>
-            <Link to="/employer-dashboard" className="rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-bold text-emerald-700 transition hover:bg-emerald-100">
-              Nha tuyen dung
-            </Link>
-            <Link to="/admin/login" className="rounded-lg border border-slate-300 bg-slate-900 px-4 py-3 text-sm font-bold text-white transition hover:bg-slate-700">
-              Admin
-            </Link>
           </div>
         </section>
 

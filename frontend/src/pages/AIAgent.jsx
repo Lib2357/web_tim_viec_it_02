@@ -23,6 +23,33 @@ const assistantLongReply = [
   'Add safety checks, logging, and deployment process.',
 ]
 
+const aiSuggestedJobs = [
+  {
+    id: 'mobile-react-native',
+    title: 'Senior Mobile Developer (React Native)',
+    company: 'Sky Tech Solutions',
+    salary: '35M - 50M VND',
+    location: 'Quan 1, TP.HCM / Hybrid',
+    skills: ['React Native', 'TypeScript', 'REST API'],
+  },
+  {
+    id: 'frontend-react',
+    title: 'Frontend Developer (ReactJS)',
+    company: 'Chocode Tech Editorial',
+    salary: '18M - 30M VND',
+    location: 'TP.HCM / Remote linh hoat',
+    skills: ['React', 'Vite', 'Tailwind CSS'],
+  },
+  {
+    id: 'backend-nodejs',
+    title: 'Backend Developer (Node.js)',
+    company: 'Mekong Fintech',
+    salary: '25M - 40M VND',
+    location: 'Ha Noi / Hybrid',
+    skills: ['Node.js', 'PostgreSQL', 'Redis'],
+  },
+]
+
 export default function AIAgent() {
   const [prompt, setPrompt] = useState('')
   const [userMenuOpen, setUserMenuOpen] = useState(false)
@@ -215,6 +242,43 @@ export default function AIAgent() {
                       <p className="mt-4 max-w-[1240px] text-[14px] leading-7 text-slate-800">
                         These are just the basic steps to get started with a GPT chatbot in Python. Depending on your requirements, you may need to add more features or complexity.
                       </p>
+
+                      <div className="mt-5 rounded-[18px] border border-[#d9ebff] bg-[linear-gradient(180deg,#f9fcff_0%,#f2f8ff_100%)] p-4 shadow-[0_16px_40px_-32px_rgba(36,137,210,0.65)]">
+                        <div className="mb-3 flex items-center justify-between gap-3">
+                          <div>
+                            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#2489d2]">Job suggestions</p>
+                            <h3 className="mt-1 text-[18px] font-black text-slate-900">Cong viec AI de xuat cho ban</h3>
+                          </div>
+                          <Link to="/search-jobs" className="text-[12px] font-bold text-[#2b59ff] transition hover:underline">
+                            Xem tat ca
+                          </Link>
+                        </div>
+
+                        <div className="grid gap-3 lg:grid-cols-3">
+                          {aiSuggestedJobs.map((job) => (
+                            <Link
+                              key={job.id}
+                              to={`/job-detail/${job.id}`}
+                              className="rounded-[16px] border border-white bg-white p-4 shadow-[0_14px_30px_-28px_rgba(15,23,42,0.55)] transition hover:-translate-y-0.5 hover:border-[#cfe4ff] hover:shadow-[0_18px_32px_-26px_rgba(36,137,210,0.35)]"
+                            >
+                              <p className="text-[15px] font-bold leading-6 text-slate-900">{job.title}</p>
+                              <p className="mt-1 text-[13px] font-medium text-slate-500">{job.company}</p>
+                              <div className="mt-3 flex items-center gap-1.5 text-[13px] font-bold text-emerald-600">
+                                <span className="material-symbols-outlined !text-[16px]">payments</span>
+                                {job.salary}
+                              </div>
+                              <p className="mt-2 text-[12px] leading-5 text-slate-500">{job.location}</p>
+                              <div className="mt-3 flex flex-wrap gap-2">
+                                {job.skills.map((skill) => (
+                                  <span key={skill} className="rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-medium text-slate-600">
+                                    {skill}
+                                  </span>
+                                ))}
+                              </div>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
 
                       <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 pb-5">
                         <div className="flex items-center gap-2">

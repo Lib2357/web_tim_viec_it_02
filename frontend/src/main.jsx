@@ -11,7 +11,9 @@ import MilestoneManagement from './pages/MilestoneManagement.jsx'
 import Notifications from './pages/Notifications.jsx'
 import JobProgress from './pages/JobProgress.jsx'
 import MessagesCenter from './pages/MessagesCenter.jsx'
+import UploadCv from './pages/UploadCv.jsx'
 import UploadedCvs from './pages/UploadedCvs.jsx'
+import AppliedProfileEdit from './pages/AppliedProfileEdit.jsx'
 import AuthPortal from './pages/AuthPortal.jsx'
 import JobDetail from './pages/JobDetail.jsx'
 import Discussions from './pages/Discussions.jsx'
@@ -54,7 +56,9 @@ createRoot(document.getElementById('root')).render(
         <Route path="/milestones" element={<MilestoneManagement />} />
         <Route path="/notifications" element={<Notifications />} />
         <Route path="/job-progress" element={<JobProgress />} />
+        <Route path="/upload-cv" element={<UploadCv />} />
         <Route path="/uploaded-cvs" element={<UploadedCvs />} />
+        <Route path="/uploaded-cvs/:cvId/edit" element={<AppliedProfileEdit />} />
         <Route path="/messages" element={<MessagesCenter />} />
         <Route path="/login" element={<AuthPortal mode="login" />} />
         <Route path="/register" element={<AuthPortal mode="register" />} />

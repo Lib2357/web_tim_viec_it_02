@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import DashboardSidebar from '../components/DashboardSidebar.jsx'
 import { loadUserUploadedCvs } from '../data/apiClient.js'
 
@@ -48,7 +49,6 @@ export default function UploadedCvs() {
             </div>
             <div>
               <h1 className="text-[22px] font-extrabold leading-none tracking-tight text-slate-900">CV da tai len</h1>
-              <p className="mt-1 text-xs font-medium text-slate-500">Thu vien CV gan voi tai khoan de su dung cho luong ung tuyen qua `cv_id`.</p>
             </div>
           </div>
         </header>
@@ -66,7 +66,6 @@ export default function UploadedCvs() {
                   <div>
                     <p className="text-[15px] font-semibold text-slate-700">{card.label}</p>
                     <p className="mt-1.5 text-[30px] font-extrabold leading-none text-slate-900">{card.value}</p>
-                    <p className="mt-1.5 text-[13px] text-slate-500">Mock theo docs API va flow apply</p>
                   </div>
                   <div className={`flex h-11 w-11 items-center justify-center rounded-xl ${card.tone}`}>
                     <span className="material-symbols-outlined text-[22px]">{card.icon}</span>
@@ -81,7 +80,6 @@ export default function UploadedCvs() {
               <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
                 <div>
                   <h2 className="text-lg font-bold text-slate-900">Danh sach CV tren he thong</h2>
-                  <p className="mt-1 text-sm text-slate-500">Thong tin hien thi duoc mock dua tren `cv_id` trong docs va nhu cau chon CV khi ung tuyen.</p>
                 </div>
                 <div className="relative w-full lg:w-[360px]">
                   <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[17px] text-slate-400">search</span>
@@ -106,13 +104,8 @@ export default function UploadedCvs() {
                         {cv.is_default && <span className="rounded-full bg-amber-50 px-2.5 py-1 text-xs font-semibold text-amber-700">CV mac dinh</span>}
                         <span className="rounded-full bg-blue-50 px-2.5 py-1 text-xs font-semibold text-blue-700">{cv.visibility}</span>
                       </div>
-                      <p className="mt-1 text-sm text-slate-500">{cv.file_name}</p>
 
                       <div className="mt-3 grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-4">
-                        <div className="rounded-lg bg-slate-50 px-3 py-2">
-                          <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-slate-400">CV ID</p>
-                          <p className="mt-1 break-all text-sm font-semibold text-slate-700">{cv.cv_id}</p>
-                        </div>
                         <div className="rounded-lg bg-slate-50 px-3 py-2">
                           <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-slate-400">Vi tri muc tieu</p>
                           <p className="mt-1 text-sm font-semibold text-slate-700">{cv.target_role}</p>
@@ -160,6 +153,12 @@ export default function UploadedCvs() {
                         <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-slate-400">Luot ung tuyen</p>
                         <p className="mt-1 text-sm font-semibold text-slate-700">{cv.applications_count}</p>
                       </div>
+                      <Link
+                        to={`/uploaded-cvs/${cv.cv_id}/edit`}
+                        className="col-span-2 inline-flex h-11 items-center justify-center rounded-lg bg-blue-600 px-4 text-sm font-bold text-white transition hover:bg-blue-700 xl:col-span-1"
+                      >
+                        Cap nhat ho so
+                      </Link>
                     </div>
                   </div>
                 </article>

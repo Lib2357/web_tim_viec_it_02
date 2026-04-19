@@ -52,6 +52,11 @@ async function loadMockUserCvs() {
   return res.json()
 }
 
+async function loadMockProfileEdit() {
+  const res = await fetch('/api/profile-edit.json')
+  return res.json()
+}
+
 function formatSalary(salary) {
   if (!salary || typeof salary !== 'object') return 'Thoa thuan'
   if (salary.is_negotiable && salary.min == null && salary.max == null) return 'Thoa thuan'
@@ -426,4 +431,10 @@ export async function toggleFavoriteJob(jobId, shouldFavorite) {
 export async function loadUserUploadedCvs() {
   const mock = await loadMockUserCvs()
   return Array.isArray(mock?.data?.cvs) ? mock.data.cvs : []
+}
+
+export async function loadEditableAppliedProfile(cvId) {
+  const mock = await loadMockProfileEdit()
+  const items = Array.isArray(mock?.data?.profiles) ? mock.data.profiles : []
+  return items.find((item) => String(item.cv_id) === String(cvId)) || null
 }
